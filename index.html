@@ -226,25 +226,69 @@
       }
     }
 
-  @media (max-width: 768px) {
-  .planta {
-    width: 25%;
+  @media (max-width: 480px) {
+  body {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 30px;
   }
 
   .mensaje {
-    font-size: 2em;
-    top: 15%;
+    font-size: 2.5em;
+    top: auto;
+    position: relative;
+    margin-bottom: 30px;
+    text-align: center;
   }
-}
 
-@media (max-width: 480px) {
+  .jardin {
+    flex-wrap: nowrap;
+    flex-direction: row;
+    overflow-x: auto;
+    max-width: 100%;
+    justify-content: center;
+    padding-bottom: 40px;
+  }
+
   .planta {
-    width: 50%;
+    width: 60px;
+    min-width: 60px;
+    margin: 0 6px;
   }
 
-  .mensaje {
-    font-size: 1.5em;
-    top: 20%;
+  .flor {
+    width: 60px;
+    height: 60px;
+  }
+
+  .petalo {
+    width: 40px;
+    height: 40px;
+  }
+
+  .centro {
+    width: 24px;
+    height: 24px;
+    top: 18px;
+    left: 18px;
+  }
+
+  .tallo {
+    height: 80px;
+  }
+
+  .hoja {
+    width: 20px;
+    height: 10px;
+    left: -15px;
+    top: 30px;
+  }
+
+  #botonAgregar {
+    font-size: 1em;
+    padding: 10px 20px;
+    margin-top: 20px;
   }
 }
     
