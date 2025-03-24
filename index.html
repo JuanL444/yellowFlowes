@@ -59,18 +59,26 @@
     }
 
   .jardin {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 16px;
-    padding: 10px;
-    max-width: 100%;
-  }
-  
-  .planta {
-    width: 30%;
-    min-width: 100px;
-  }
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding-bottom: 0px;
+    }
+
+    .planta {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+    }
+
+    .flor {
+      position: relative;
+      width: 100px;
+      height: 100px;
+      animation: girar 10s linear infinite;
+    }
 
     .petalo {
       width: 60px;
