@@ -235,28 +235,6 @@
       }
     }
 
-    @media (max-width: 768px) {
-  .planta {
-    width: 45%;
-  }
-
-  .mensaje {
-    font-size: 2.5em;
-    top: 25%;
-  }
-}
-
-@media (max-width: 480px) {
-  .planta {
-    width: 100%;
-  }
-
-  .mensaje {
-    font-size: 2em;
-    top: 30%;
-  }
-}
-
 
   </style>
 </head>
@@ -416,58 +394,7 @@
         </div>
       </div>
 
-       <!-- Puedes duplicar o triplicar esto para más flores -->
-    <div class="planta oculto">
-        <div class="flor">
-          <div class="petalo petalo1"></div>
-          <div class="petalo petalo2"></div>
-          <div class="petalo petalo3"></div>
-          <div class="petalo petalo4"></div>
-          <div class="petalo petalo5"></div>
-          <div class="petalo petalo6"></div>
-          <div class="petalo petalo7"></div>
-          <div class="petalo petalo8"></div>
-          <div class="centro"></div>
-        </div>
-        <div class="tallo">
-          <div class="hoja"></div>
-        </div>
-      </div>
 
-       <!-- Puedes duplicar o triplicar esto para más flores -->
-    <div class="planta oculto">
-        <div class="flor">
-          <div class="petalo petalo1"></div>
-          <div class="petalo petalo2"></div>
-          <div class="petalo petalo3"></div>
-          <div class="petalo petalo4"></div>
-          <div class="petalo petalo5"></div>
-          <div class="petalo petalo6"></div>
-          <div class="petalo petalo7"></div>
-          <div class="petalo petalo8"></div>
-          <div class="centro"></div>
-        </div>
-        <div class="tallo">
-          <div class="hoja"></div>
-        </div>
-      </div>
-
-    <div class="planta oculto">
-      <div class="flor">
-        <div class="petalo petalo1"></div>
-        <div class="petalo petalo2"></div>
-        <div class="petalo petalo3"></div>
-        <div class="petalo petalo4"></div>
-        <div class="petalo petalo5"></div>
-        <div class="petalo petalo6"></div>
-        <div class="petalo petalo7"></div>
-        <div class="petalo petalo8"></div>
-        <div class="centro"></div>
-      </div>
-      <div class="tallo">
-        <div class="hoja"></div>
-      </div>
-    </div>
 
     <!-- Agrega más <div class="planta"> si quieres más flores -->
   </div>
@@ -484,14 +411,14 @@
     boton.addEventListener('click', () => {
       clickCount++;
   
-      if (clickCount <= 11) {
+      if (clickCount <= 9) {
         // Mostrar una planta por clic
         if (plantas[clickCount - 1]) {
           plantas[clickCount - 1].classList.remove('oculto');
         }
-      } else if (clickCount === 12) {
+      } else if (clickCount === 10) {
         mariposa.classList.remove('oculto');
-      } else if (clickCount === 13) {
+      } else if (clickCount === 11) {
         mensaje.classList.remove('oculto');
         boton.remove(); // Oculta el botón
       }
